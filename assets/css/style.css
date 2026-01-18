@@ -39,7 +39,6 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 125%; /* Zoom à 125% pour tout le site */
 }
 
 body {
@@ -377,7 +376,7 @@ header::before {
 /* ==================== 5) LAYOUT PRINCIPAL ==================== */
 .map-section {
   width: 100%;
-  max-width: 1800px;
+  max-width: 900px;
   margin: 1.5rem auto 0;
   padding: 0.5rem 1rem 0;
   display: flex;
@@ -394,7 +393,7 @@ header::before {
   box-shadow: var(--shadow-md);
   padding: 1.5rem;
   width: 100%;
-  max-width: 2200px;
+  max-width: 900px;
   transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
 }
 
@@ -662,9 +661,6 @@ footer {
   margin-top: -1.5rem;
 }
 
-.footer-separator {
-  opacity: 0.6;
-}
 
 .footer-content span {
   opacity: 0.95;
@@ -743,6 +739,7 @@ footer {
 
 /* Mobile - Optimisation pour petits écrans */
 @media (max-width: 480px) {
+
   html {
     font-size: 100%; /* Agrandir pour mobile */
   }
@@ -765,6 +762,7 @@ footer {
   .header-container .tagline {
     display: none; /* Masquer le sous-titre sur mobile */
   }
+
 
   /* Score très compact */
   .score-display {
@@ -908,8 +906,7 @@ footer {
     flex-direction: row;
     margin-top: -1.5rem;
   }
-
- 
+}
 
 /* Très petits écrans */
 @media (max-width: 360px) {
@@ -959,8 +956,6 @@ footer {
   }
 }
 
-/* ==================== 11) DARK MODE - DÉSACTIVÉ ==================== */
-/* Dark mode désactivé pour garder le site clair sur tous les appareils */
 
 /* ==================== 12) PRINT ==================== */
 @media print {
